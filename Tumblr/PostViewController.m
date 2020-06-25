@@ -12,8 +12,8 @@
 
 @interface PostViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *postPhotoView;
-@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+@property (weak, nonatomic) IBOutlet UITextView *captionTextView;
 
 
 @end
@@ -33,7 +33,7 @@
         NSURL *url = [NSURL URLWithString:urlString];//create that url
         //NSString *caption= self.post[@"caption"];
         NSString *captionExtract= [self.post[@"caption"] substringFromIndex:3];
-        self.captionLabel.text= captionExtract;
+        self.captionTextView.text= captionExtract;
         [self.postPhotoView setImageWithURL:url];
         self.authorLabel.text=self.post[@"blog"][@"title"];
     }
