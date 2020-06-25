@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,13 +12,14 @@
 		9683B19590DA2FA3C4F4E26E /* Pods_TumblrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D000D70121BAB573C61FCEA7 /* Pods_TumblrTests.framework */; };
 		DC3FDF4A24A4FEBC009A6712 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF4924A4FEBC009A6712 /* AppDelegate.m */; };
 		DC3FDF4D24A4FEBC009A6712 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF4C24A4FEBC009A6712 /* SceneDelegate.m */; };
-		DC3FDF5024A4FEBC009A6712 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF4F24A4FEBC009A6712 /* ViewController.m */; };
 		DC3FDF5324A4FEBC009A6712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3FDF5124A4FEBC009A6712 /* Main.storyboard */; };
 		DC3FDF5524A4FEBE009A6712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3FDF5424A4FEBE009A6712 /* Assets.xcassets */; };
 		DC3FDF5824A4FEBE009A6712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3FDF5624A4FEBE009A6712 /* LaunchScreen.storyboard */; };
 		DC3FDF5B24A4FEBE009A6712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF5A24A4FEBE009A6712 /* main.m */; };
 		DC3FDF6524A4FEBE009A6712 /* TumblrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF6424A4FEBE009A6712 /* TumblrTests.m */; };
 		DC3FDF7024A4FEBE009A6712 /* TumblrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF6F24A4FEBE009A6712 /* TumblrUITests.m */; };
+		DC3FDF7F24A50035009A6712 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF7E24A50035009A6712 /* PhotosViewController.m */; };
+		DC3FDF8224A50567009A6712 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF8124A50567009A6712 /* PhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,6 @@
 		DC3FDF4924A4FEBC009A6712 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DC3FDF4B24A4FEBC009A6712 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DC3FDF4C24A4FEBC009A6712 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DC3FDF4E24A4FEBC009A6712 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC3FDF4F24A4FEBC009A6712 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DC3FDF5224A4FEBC009A6712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC3FDF5424A4FEBE009A6712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3FDF5724A4FEBE009A6712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +65,10 @@
 		DC3FDF6B24A4FEBE009A6712 /* TumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3FDF6F24A4FEBE009A6712 /* TumblrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TumblrUITests.m; sourceTree = "<group>"; };
 		DC3FDF7124A4FEBE009A6712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3FDF7D24A50035009A6712 /* PhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		DC3FDF7E24A50035009A6712 /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		DC3FDF8024A50567009A6712 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		DC3FDF8124A50567009A6712 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +109,6 @@
 				CA6A7885445205420F23D81A /* Pods-TumblrTests.debug.xcconfig */,
 				CD8375BBF3713E68C3F9A7B0 /* Pods-TumblrTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,13 +151,15 @@
 				DC3FDF4924A4FEBC009A6712 /* AppDelegate.m */,
 				DC3FDF4B24A4FEBC009A6712 /* SceneDelegate.h */,
 				DC3FDF4C24A4FEBC009A6712 /* SceneDelegate.m */,
-				DC3FDF4E24A4FEBC009A6712 /* ViewController.h */,
-				DC3FDF4F24A4FEBC009A6712 /* ViewController.m */,
 				DC3FDF5124A4FEBC009A6712 /* Main.storyboard */,
 				DC3FDF5424A4FEBE009A6712 /* Assets.xcassets */,
 				DC3FDF5624A4FEBE009A6712 /* LaunchScreen.storyboard */,
 				DC3FDF5924A4FEBE009A6712 /* Info.plist */,
 				DC3FDF5A24A4FEBE009A6712 /* main.m */,
+				DC3FDF7D24A50035009A6712 /* PhotosViewController.h */,
+				DC3FDF7E24A50035009A6712 /* PhotosViewController.m */,
+				DC3FDF8024A50567009A6712 /* PhotoCell.h */,
+				DC3FDF8124A50567009A6712 /* PhotoCell.m */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -416,8 +420,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3FDF5024A4FEBC009A6712 /* ViewController.m in Sources */,
 				DC3FDF4A24A4FEBC009A6712 /* AppDelegate.m in Sources */,
+				DC3FDF8224A50567009A6712 /* PhotoCell.m in Sources */,
+				DC3FDF7F24A50035009A6712 /* PhotosViewController.m in Sources */,
 				DC3FDF5B24A4FEBE009A6712 /* main.m in Sources */,
 				DC3FDF4D24A4FEBC009A6712 /* SceneDelegate.m in Sources */,
 			);
