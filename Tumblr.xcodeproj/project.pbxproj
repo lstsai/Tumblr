@@ -20,6 +20,7 @@
 		DC3FDF7024A4FEBE009A6712 /* TumblrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF6F24A4FEBE009A6712 /* TumblrUITests.m */; };
 		DC3FDF7F24A50035009A6712 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF7E24A50035009A6712 /* PhotosViewController.m */; };
 		DC3FDF8224A50567009A6712 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF8124A50567009A6712 /* PhotoCell.m */; };
+		DC3FDF8524A511D9009A6712 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FDF8424A511D9009A6712 /* PostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		DC3FDF7E24A50035009A6712 /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
 		DC3FDF8024A50567009A6712 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
 		DC3FDF8124A50567009A6712 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		DC3FDF8324A511D9009A6712 /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		DC3FDF8424A511D9009A6712 /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				DC3FDF7E24A50035009A6712 /* PhotosViewController.m */,
 				DC3FDF8024A50567009A6712 /* PhotoCell.h */,
 				DC3FDF8124A50567009A6712 /* PhotoCell.m */,
+				DC3FDF8324A511D9009A6712 /* PostViewController.h */,
+				DC3FDF8424A511D9009A6712 /* PostViewController.m */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 			files = (
 				DC3FDF4A24A4FEBC009A6712 /* AppDelegate.m in Sources */,
 				DC3FDF8224A50567009A6712 /* PhotoCell.m in Sources */,
+				DC3FDF8524A511D9009A6712 /* PostViewController.m in Sources */,
 				DC3FDF7F24A50035009A6712 /* PhotosViewController.m in Sources */,
 				DC3FDF5B24A4FEBE009A6712 /* main.m in Sources */,
 				DC3FDF4D24A4FEBC009A6712 /* SceneDelegate.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  PhotoCell.h
+//  PostViewController.h
 //  Tumblr
 //
 //  Created by laurentsai on 6/25/20.
@@ -10,10 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PhotoCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *postView;
-@property (weak, nonatomic) IBOutlet UILabel *summaryLabel;
-
+@interface PostViewController : UIViewController
+@property (nonatomic, strong) NSDictionary *post;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,6 +9,7 @@
 #import "PhotosViewController.h"
 #import "UIImageView+AFNetworking.h"
 #import "PhotoCell.h"
+#import "PostViewController.h"
 
 
 @interface PhotosViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -47,19 +48,26 @@
                 
             }
         }];
-    self.tableView.rowHeight = 240;
+    self.tableView.rowHeight = 300;
     [task resume];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UITableViewCell *tappedCell=sender;//get the tapped cell
+
+    NSIndexPath *tappedIndex=[self.tableView indexPathForCell:tappedCell];
+    NSDictionary *post= self.posts[tappedIndex.row];
+    PostViewController *postVC= [segue destinationViewController];
+    postVC.post=post;//set the tapped post for the post controller to know whats up
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     PhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PhotoCell" forIndexPath:indexPath];
@@ -73,7 +81,8 @@
         NSDictionary *originalSize= thePhoto[@"original_size"];
         NSString *urlString = originalSize[@"url"];//get url from the orig size dictionary
         NSURL *url = [NSURL URLWithString:urlString];//create that url
-      
+        NSString *summary= post[@"summary"];
+        cell.summaryLabel.text= summary;
         [cell.postView setImageWithURL:url];
     }
     return cell;
